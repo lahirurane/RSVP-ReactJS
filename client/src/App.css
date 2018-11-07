@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.content-background-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.form-control-radio-root {
+  font-size: 1.5em;
+}
+.form-control-label {
+  font-size: 1.5rem !important;
+}
+
+.inv-img {
+  width: 25em;
+}
+body {
+  background-image: url(./images/bc1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.content-page .content {
+  border-radius: 5px;
+  padding: 1.5em;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
+}
+
+.form-content-row .form-content-col {
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: inset 0 0 0 200px rgba(191, 195, 195, 0.5);
+  font-size: 1.2em;
+  width: 85%;
+}
+.form-rsvp-title {
+  font-size: 1em;
+}
+.form-name-title {
+  font-size: 1.5em;
+}
+.form-event-title {
+  font-size: 1em;
+}
+.success-content {
+  margin-top: 1em;
+}
+.success-content .success-ok {
+  color: #00695f;
+  font-size: 2em;
+}
+.success-content .success-text {
+  font-size: 1.5em;
+}
+/* 
+.content-page .content::before {
+  background: inherit;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
+  filter: blur(10px);
+  content: '';
+} */
+
+.center-items {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.content-page .content-page-row {
+  height: 100vh;
+}
+/* .content-page-row .content-page-col {
+  
+} */
+.relative-height {
+  position: relative;
+  height: 100%;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1580px) {
+  body {
+    font-size: 14px;
+  }
+  .unbehaved-element {
+    font-size: 1.9em; /* Fine tune unbehaved elements */
+  }
+}
+@media (max-width: 1280px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 980px) {
+  body {
+    font-size: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .content-page .content-page-row {
+    height: 50vh;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    font-size: 8px;
+  }
+}
