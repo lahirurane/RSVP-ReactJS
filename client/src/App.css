@@ -134,7 +134,7 @@ body {
     background-position: 50% 50%;
   }
   .content-page .content-page-row {
-    height: 50vh;
+    height: 65vh;
   }
 }
 @media (max-width: 375px) {
