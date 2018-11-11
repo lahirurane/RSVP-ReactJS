@@ -58,7 +58,10 @@ export default class Responses extends Component {
       <div className="row">
         <div className="col-md-12">
           <div className="row">
-            <div className="col-md-12">
+            <div
+              style={{ background: 'rgba(255, 255, 255, 0.2)' }}
+              className="col-md-12"
+            >
               <div className="row">
                 <div className="col-md-12">
                   <h2>Wedding</h2>
@@ -88,11 +91,14 @@ export default class Responses extends Component {
                 : ''}
             </div>
           </div>
-          <div className="row">&nbsp;</div>
-          <div className="row">&nbsp;</div>
-          <div className="row">&nbsp;</div>
+          <div className="row">&nbsp;&nbsp;</div>
+          <div className="row">&nbsp;&nbsp;</div>
+          <div className="row">&nbsp;&nbsp;</div>
           <div className="row">
-            <div className="col-md-12">
+            <div
+              style={{ background: 'rgba(255, 255, 255, 0.2)' }}
+              className="col-md-12"
+            >
               <div className="col-md-12">
                 <div className="row">
                   <div className="col-md-12">
