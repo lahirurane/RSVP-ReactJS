@@ -49,4 +49,21 @@ router.post('/response', (req, res) => {
     });
 });
 
+// @route   GET api/rsvp/response
+// @desc    User Response
+// @access  Public
+router.get('/getResponses/:param', (req, res) => {
+  const param = req.params.param;
+  Response.find({ type: param })
+    .then(data => {
+      return res.status(200).json(data);
+    })
+    .catch(err => {
+      return res.status(400).json({
+        error: 'Error in getting the responses data',
+        ErrorDetails: err
+      });
+    });
+});
+
 module.exports = router;

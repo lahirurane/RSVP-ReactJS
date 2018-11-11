@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Wedding from './components/layout/Wedding';
 import HomeComing from './components/layout/HomeComing';
+import Responses from './components/layout/Responses';
 
 import './App.css';
 
@@ -19,6 +20,7 @@ class App extends Component {
           <div>
             <Route exact path="/hc" component={HomeComing} />
             <Route exact path="/wedding" component={Wedding} />
+            <Route exact path="/responses" component={Responses} />
           </div>
         </div>
       </Router>
