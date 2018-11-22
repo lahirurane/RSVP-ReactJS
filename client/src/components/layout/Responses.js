@@ -53,7 +53,8 @@ export default class Responses extends Component {
       });
   }
   render() {
-    console.log(this.state.data_wedding);
+    let totalW = 0;
+    let totalHc = 0;
     return (
       <div className="row">
         <div className="col-md-12">
@@ -77,6 +78,9 @@ export default class Responses extends Component {
               </div>
               {this.state.data_wedding
                 ? this.state.data_wedding.map(item => {
+                    if (item.isAccepted) {
+                      ++totalW;
+                    }
                     return (
                       <div className="row">
                         <div className="col-md-4 col-md-offset-2">
@@ -89,8 +93,30 @@ export default class Responses extends Component {
                     );
                   })
                 : ''}
+              <hr />
+              <div className="row">
+                <div className="col-md-4 col-md-offset-2">
+                  <h4>Total Wedding Attendence</h4>
+                </div>
+                <div className="col-md-4">
+                  <h4>{totalW}</h4>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-4 col-md-offset-2">
+                  <p>Total Wedding Responses</p>
+                </div>
+                <div className="col-md-4">
+                  <p>
+                    {this.state.data_wedding
+                      ? this.state.data_wedding.length
+                      : ''}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+
           <div className="row">&nbsp;&nbsp;</div>
           <div className="row">&nbsp;&nbsp;</div>
           <div className="row">&nbsp;&nbsp;</div>
@@ -117,6 +143,9 @@ export default class Responses extends Component {
                 </div>
                 {this.state.data_hc
                   ? this.state.data_hc.map(item => {
+                      if (item.isAccepted) {
+                        ++totalHc;
+                      }
                       return (
                         <div className="row">
                           <div className="col-md-4 col-md-offset-2">
@@ -129,6 +158,23 @@ export default class Responses extends Component {
                       );
                     })
                   : ''}
+                <hr />
+                <div className="row">
+                  <div className="col-md-4 col-md-offset-2">
+                    <h4>Total Home Coming Attendence</h4>
+                  </div>
+                  <div className="col-md-4">
+                    <h4>{totalHc}</h4>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-4 col-md-offset-2">
+                    <p>Total Home Coming Responses</p>
+                  </div>
+                  <div className="col-md-4">
+                    <p>{this.state.data_hc ? this.state.data_hc.length : ''}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
