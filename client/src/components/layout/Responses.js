@@ -96,7 +96,7 @@ export default class Responses extends Component {
               <hr />
               <div className="row">
                 <div className="col-md-4 col-md-offset-2">
-                  <h4>Total Wedding Attendence</h4>
+                  <h4>Total Wedding Attendance</h4>
                 </div>
                 <div className="col-md-4">
                   <h4>{totalW}</h4>
@@ -161,7 +161,7 @@ export default class Responses extends Component {
                 <hr />
                 <div className="row">
                   <div className="col-md-4 col-md-offset-2">
-                    <h4>Total Home Coming Attendence</h4>
+                    <h4>Total Home Coming Attendance</h4>
                   </div>
                   <div className="col-md-4">
                     <h4>{totalHc}</h4>
